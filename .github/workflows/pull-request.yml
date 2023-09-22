@@ -10,7 +10,7 @@ on:
       - ready_for_review
       - reopened
       - unlocked
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   job1:
     name: Pruebas
@@ -44,3 +44,4 @@ jobs:
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
           MERGE_LABELS: "Automerge-action funcione plis"
+
