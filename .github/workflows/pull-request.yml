@@ -10,7 +10,7 @@ on:
       - ready_for_review
       - reopened
       - unlocked
-    branches: [ master ]
+    branches: [ main ]
 jobs:
   job1:
     name: Pruebas
@@ -43,4 +43,8 @@ jobs:
         uses: "pascalgn/automerge-action@4536e8847eb62fe2f0ee52c8fa92d17aa97f932f"
         env:
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+<<<<<<< HEAD
           MERGE_LABELS: "Automerge-action"
+=======
+          MERGE_LABELS: ""
+>>>>>>> 350e56d2f5ff9ae25b02f8a4c8945f83bd7042f5
